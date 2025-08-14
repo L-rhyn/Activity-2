@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Activity 2</title>
+</head>
+
+<style>
+body{
+    text-align:center;
+    background: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG4xdmwwYmQyM2E3c244NmJhaXR2d2FhMHh6YmN1eW82aG9yN3FwMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WPwD0gdWFsNRy8LA2P/giphy.gif);
+    align-items: center;
+  }
+
+h1{
+  color:blue;
+  text-align:center;
+  font-style:Bold;
+}
+
+p{
+  text-align:center;
+  
+}
+.intro {
+    max-width: 400px;                  
+    margin: 0 auto 20px auto;       
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6); 
+    border-radius: 10px;                
+    font-size: 20px;
+    text-align: center;
+}
+
+.sub {
+    display: block;                              
+    width: 300px;                                
+    height: 250px;                             
+    margin: 10px auto;                          
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.7); 
+    border-radius: 10%;
+    box-sizing: border-box;
+}
+img{
+  width:150px;
+  height:auto;
+  border-radius:50%;
+  display:block;
+  margin:10px auto;
+}
+
+h2{
+  color:black;
+  text-align:center;
+  
+}
+
+.sub ul li {
+    font-family: 'Arial', sans-serif; 
+     margin-bottom: 8px;              
+    line-height: 1.4;  
+}
+
+ul{
+  padding:0;
+  list-style:none;
+}
+button{
+    background-color: #4CAF50;       
+    color: white;                   
+    padding: 10px 20px;              
+    border: none;                    
+    border-radius: 8px;              
+    font-size: 16px;                  
+    cursor: pointer;         
+}         
+</style>
+</head>
+
+<body>
+<h1>I'm Back!</h1>
+<div class="intro">
+    <p><i>Hi! My name is Lryn Cuyangan</i></p>
+</div>
+
+
+<img src="images.jpg" alt="selfie girl" >
+
+<div class="sub">
+<h2>Class Expectation</h2>
+<ul>
+  <li>A positive atmosphere for everyone.
+  <li>Meet the course deadline effectively.
+  <li>Engaging Discussion.
+  </li>
+</ul>
+</div>
+
+<div class="sub">
+<h2>Subject Expectation</h2>
+<ul>
+  <li>Challenging but enjoyable.
+  <li>More on time to code exercises and projects.
+  <li>I expect to develop the ability to analyze problems.
+  </li>
+</ul>
+</div>
+
+<div class="sub">
+<h2>Future PHP Projects</h2>
+<ul>
+  <li>Create simple e-commerse platform.
+  <li>Create simple management system.
+  <li>Create simple Web Application.
+  </li>
+</ul>
+</div>
+
+<button onclick="
+    var colors = [
+        'rgba(255, 182, 193, 0.7)', 
+        'rgba(173, 216, 230, 0.7)', 
+        'rgba(255, 255, 224, 0.7)', 
+        'rgba(221, 160, 221, 0.7)' 
+    ];
+    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    document.querySelectorAll('.sub').forEach(function(box) {
+        box.style.backgroundColor = randomColor;
+    });
+">
+    Change Boxes Background
+</button>
+
+<button onclick="
+    var images = [
+        'https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXQ0M2xvNzN2YXo1ZmNjd2Zzd3YxOXh2ZmR0YTZlZHNoaGhjbjFvaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/7AtHoQ9XWbpwLRxs0t/giphy.gif',
+        'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnJvd2d2cGt6eXF5eDlqZm5rcHhyNXpuZGg0OWE3YjNhamFveWsycSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7buijTqhjxjbEqjK/giphy.gif',
+        'https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOW1vMW9zNG1td3ZkNjF4NHc0NzQ3YnpqeDVtaDZ5cXV2ZmIyNTducyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3bc8pP1rVdfgN1uoMV/giphy.gif',
+      ];
+    var randomImage = images[Math.floor(Math.random() * images.length)];
+    document.body.style.background = 'url(' + randomImage + ')';
+">
+    Change Background
+</button>
+
+
+</body>
+
+</html>
